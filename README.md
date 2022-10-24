@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Microverse Leaderboard Project
+# Microverse Math Magician Project
 
 > **"Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:**
 
