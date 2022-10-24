@@ -22,7 +22,7 @@ export class Calculator extends Component {
           </div>
 
           <div className="calculator__keys">
-            {this.buttonKeys.map((each) => <button key={each.id} type="button"><span className="front">{each}</span></button>)}
+            {this.buttonKeys.map((each) => <button key={each} type="button"><span className="front">{each}</span></button>)}
           </div>
         </div>
       </div>
