@@ -16,7 +16,7 @@ class App extends Component {
       <>
         <Navbar />
         <Routes>
-          <Route path="/math_magician" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/math_magician/calculator" element={<Calculate />} />
           <Route path="/math_magician/quote" element={<Quote />} />
         </Routes>

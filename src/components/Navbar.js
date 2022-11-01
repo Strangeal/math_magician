@@ -5,7 +5,7 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: '/math_magician',
+      path: '/',
       text: 'Home',
     },
     {
@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className="navbar__container">
       <nav className="navbar">
         <div className="nav__brand">
-          <Link to="/math_magician" className="brand__link">Math Magician</Link>
+          <Link to="/" className="brand__link">Math Magician</Link>
         </div>
         <ul className="nav__menu">
           {links.map((link) => (
