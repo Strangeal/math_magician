@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-import './Calculator.css';
+import '../App.css';
 
 export const Calculator = () => {
   const [counter, setCounter] = useState({
@@ -28,19 +28,23 @@ export const Calculator = () => {
 
   const { total, next } = counter;
   return (
-    <div className="calculator">
-      <div className="calculator__Ui">
-        <div className="screen">{next || total || 0}</div>
-        <div className="calculator__keys">
-          {buttonKeys.map((each) => (
-            <button
-              key={each}
-              onClick={(e) => onClickHandler(e)}
-              type="button"
-            >
-              <span className="front">{each}</span>
-            </button>
-          ))}
+
+    <div className="calculator__container">
+      <h3>Let do some Maths!</h3>
+      <div className="calculator">
+        <div className="calculator__Ui">
+          <div className="screen">{next || total || 0}</div>
+          <div className="calculator__keys">
+            {buttonKeys.map((each) => (
+              <button
+                key={each}
+                onClick={(e) => onClickHandler(e)}
+                type="button"
+              >
+                <span className="front">{each}</span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </div>
