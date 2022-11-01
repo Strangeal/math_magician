@@ -14,6 +14,10 @@ li {
   list-style: none;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+}
+
 .calculator {
   min-width: 40%;
   margin: auto;
@@ -101,16 +105,13 @@ button:nth-of-type(-n+3) .front {
   align-items: center;
 }
 
-.nav__item {
-  padding: 0 1rem;
-}
-
-.nav__link {
+.link {
   font-size: 1.2rem;
+  padding: 0 1rem;
   color: #000;
 }
 
-.nav__link:hover {
+#nav__link:hover {
   color: aqua;
   transition: 0.5s ease-in-out;
 }
@@ -132,7 +133,6 @@ button:nth-of-type(-n+3) .front {
 p {
   font-size: 1.2rem;
   padding-top: 2rem;
-  font-weight: 600;
 }
 
 /* Calculator */
@@ -151,7 +151,12 @@ p {
   width: 90%;
   height: 90vh;
   margin: auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
   display: flex;
   align-items: center;
+}
+
+.active {
+  color: #fa6400;
 }
