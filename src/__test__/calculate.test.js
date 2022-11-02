@@ -35,4 +35,10 @@ describe('Test calculate component', () => {
   test('Check "x"  operation', () => {
     expect(calculate(obj, 'x').operation).toBe('x');
   })
+
+  // complete calculation
+  test('complete calculation', () => {
+    obj.next = 27;
+    expect(calculate(calculate(calculate(calculate(obj, 'null'), '+'), '13'), '=').total).toBe('40');
+  })
 })
