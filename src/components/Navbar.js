@@ -1,22 +1,22 @@
-import "../App.css";
-import { Link, NavLink } from "react-router-dom";
+import '../App.css';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: "/",
-      text: "Home",
+      path: '/',
+      text: 'Home',
     },
     {
       id: 2,
-      path: "/math_magician/Calculator",
-      text: "Calculator",
+      path: '/math_magician/Calculator',
+      text: 'Calculator',
     },
     {
       id: 3,
-      path: "/math_magician/quote",
-      text: "Quote",
+      path: '/math_magician/quote',
+      text: 'Quote',
     },
   ];
 
@@ -31,11 +31,11 @@ const Navbar = () => {
         <ul className="nav__menu">
           {links.map((link) => (
             <li key={link.id} className="nav__item">
-              {" "}
+              {' '}
               |
               <NavLink
                 to={link.path}
-                className={({ isActive }) => `link ${isActive ? "active" : ""}`}
+                className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
                 end
               >
                 {link.text}

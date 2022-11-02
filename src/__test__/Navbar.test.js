@@ -1,13 +1,13 @@
-import React from "react";
-import { render } from "@testing-library/react";
-import Navbar from "../components/Navbar";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import { render } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from '../components/Navbar';
 
-it("renders to match the snapshot", () => {
-  const tree = render(
+it('renders to match the snapshot', () => {
+  const navbar = render(
     <BrowserRouter>
       <Navbar />
-    </BrowserRouter>
+    </BrowserRouter>,
   );
-  expect(tree).toMatchSnapshot();
+  expect(navbar).toMatchSnapshot();
 });
