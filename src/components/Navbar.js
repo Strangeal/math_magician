@@ -24,14 +24,20 @@ const Navbar = () => {
     <div className="navbar__container">
       <nav className="navbar">
         <div className="nav__brand">
-          <Link to="/" className="brand__link">Math Magician</Link>
+          <Link to="/" className="brand__link">
+            Math Magician
+          </Link>
         </div>
         <ul className="nav__menu">
           {links.map((link) => (
             <li key={link.id} className="nav__item">
               {' '}
               |
-              <NavLink to={link.path} className={({ isActive }) => `link ${(isActive ? 'active' : '')}`} end>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) => `link ${isActive ? 'active' : ''}`}
+                end
+              >
                 {link.text}
               </NavLink>
             </li>
