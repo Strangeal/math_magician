@@ -23,6 +23,7 @@ export const Calculator = () => {
     } = e;
 
     const results = calculate(counter, buttonName);
+    console.log(results);
     setCounter(results);
   };
 
