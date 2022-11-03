@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[**See Project 🚀**](Coming soon;
+[**See Project 🚀**](https://math-magician-strangeal.netlify.app)
 
 ## Get Started
 
